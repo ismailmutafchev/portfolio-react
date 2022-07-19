@@ -192,7 +192,6 @@ li {
 }
 
 .game_window img {
-    min-width: 420px;
     width: 420px;
     z-index: 2;
     position: absolute;
