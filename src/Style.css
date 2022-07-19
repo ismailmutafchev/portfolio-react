@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=PT+Sans&display=swap');
+
+@keyframes colorsm {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+:root {
+    font-family: 'Fira Code', monospace;
+    background-color: #011627;
+    color: rgba(96, 123, 150, 1);
+    font-size: 12px;
+}
+html{
+    margin-bottom: 0px;
+
+}
+body {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96 122 151);
+}
+nav {
+    height: 10vh;
+}
+
+nav ul {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.68);
+    grid-area: header;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 5fr 1fr;
+}
+
+ul{
+    list-style: none;
+}
+
+#nav_name {
+    min-width: 120px;
+}
+
+#nav_hello,
+#nav_about-me,
+#nav_projects,
+#nav_contact {
+    min-width: 90px;
+}
+
+footer ul {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 10fr 3fr;
+    border-top: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+main {
+    grid-area: main;
+    height: 5fr;
+}
+
+footer {
+    grid-area: footer;
+    width: 1fr;
+}
+
+section {
+    height: 80vh;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+footer li:not(:last-child) {
+    border-right: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+li {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero_text h4 {
+    font-size: 1rem;
+    color: white;
+}
+
+._hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.hero_text h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero_text h2 {
+    font-size: 2rem;
+    color: rgba(77, 91, 206, 1);
+    padding-bottom: 6rem;
+}
+
+.purple {
+    color: rgba(77, 91, 206, 1)
+}
+
+.green {
+    color: rgba(67, 217, 173, 1);
+}
+
+.white {
+    color: white;
+}
+
+.hero_p_const a {
+    color: rgba(233, 146, 135, 1);
+}
+
+.hero_text {
+    padding-left: 50px;
+}
+
+.hero-game {
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline;
+    position: relative;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 25px;
+    background-color: transparent;
+}
+#light_hold{
+    animation: colorsm 8s infinite linear;
+    box-shadow: 100px 50px 150px 150px rgba(67, 217, 172, 0.567), -100px -50px 150px 150px rgba(77, 92, 206, 0.6);
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
+}
+
+.screw {
+    text-align: center;
+    padding: 0px;
+    margin: 7px;
+    border-radius: 50px;
+    width: 16px;
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, 0.564);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.579);
+    position: absolute;
+}
+
+#screw-tr {
+    top: 0px;
+    right: 0px;
+}
+
+#screw-tl {
+    top: 0px;
+    left: 0px;
+}
+
+#screw-br {
+    bottom: 200px;
+    right: 0px;
+}
+
+#screw-bl {
+    bottom: 200px;
+    left: 0px;
+}
+
+.game_window img {
+    min-width: 420px;
+    width: 420px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 25px;
+}
+
+@media(max-width:800px) {
+    ._hello {
+        flex-direction: column;
+    }
+
+    .hero_text h2 {
+        padding-bottom: 2rem;
+    }
+}
