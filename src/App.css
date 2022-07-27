@@ -28,7 +28,9 @@ body {
         'footer';
 }
 
-
+section {
+    height: 83.5vh;
+}
 
 
 
