@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(96 122 151);
+}
+nav {
+    height: 10vh;
+}
+
+nav ul {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.68);
+    grid-area: header;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 5fr 1fr;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#nav_name {
+    min-width: 120px;
+}
+
+#nav_hello,
+#nav_about-me,
+#nav_projects,
+#nav_contact {
+    min-width: 90px;
+}

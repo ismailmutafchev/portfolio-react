@@ -1,20 +1,23 @@
-
-import './Style.css';
+import './App.css';
 import './Reset.css';
-import './resources/Header'
-import './resources/Hero'
-import './resources/Footer'
-import { Header } from './resources/Header';
-import { Hero } from './resources/Hero';
-import { Footer } from './resources/Footer';
+
+import { Header } from './components/Common/Header';
+import { Hero } from './components/Home/Home';
+import { Footer } from './components/Common/Footer';
+
+import { Route, Routes } from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Hero/>
-      <Footer/>
+      <Header />
+
+      <Routes>
+        <Route path='/' element={<Hero />} />
+      </Routes>
+
+      <Footer />
     </div>
   );
 }

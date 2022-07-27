@@ -1,3 +1,5 @@
+import './Home.css'
+
 export function Hero() {
     return (<section class="_hello">
     <div class="hero_text">
@@ -7,7 +9,7 @@ export function Hero() {
         <p class="gray__p">// complete the game to continue</p>
         <p class="gray__p">// you can also change the colors by tapping </p>
         <p class="hero_p_const"><span class="purple">const</span> <span class="green">githubLink</span>
-            <span class="white"> =</span><a href="">"link"</a>
+            <span class="white"> =</span><a href="https://github.com/ismailmutafchev">"https://github.com/ismailmutafchev"</a>
         </p>
     </div>
     <div class="hero-game">

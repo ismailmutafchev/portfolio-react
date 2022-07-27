@@ -1,0 +1,13 @@
+footer ul {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 10fr 3fr;
+    border-top: 1px solid rgba(128, 128, 128, 0.68);
+}
+footer {
+    grid-area: footer;
+    width: 1fr;
+}
+footer li:not(:last-child) {
+    border-right: 1px solid rgba(128, 128, 128, 0.68);
+}

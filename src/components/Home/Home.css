@@ -1,97 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=PT+Sans&display=swap');
-
-@keyframes colorsm {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-:root {
-    font-family: 'Fira Code', monospace;
-    background-color: #011627;
-    color: rgba(96, 123, 150, 1);
-    font-size: 12px;
-}
-html{
-    margin-bottom: 0px;
-
-}
-body {
-    display: grid;
-    grid-template-areas:
-        'header'
-        'main'
-        'footer';
-}
-a{
-    text-decoration: none;
-    font-size: 14px;
-    color: rgb(96 122 151);
-}
-nav {
-    height: 10vh;
-}
-
-nav ul {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.68);
-    grid-area: header;
-    height: 60px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 5fr 1fr;
-}
-
-ul{
-    list-style: none;
-}
-
-#nav_name {
-    min-width: 120px;
-}
-
-#nav_hello,
-#nav_about-me,
-#nav_projects,
-#nav_contact {
-    min-width: 90px;
-}
-
-footer ul {
-    height: 60px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 10fr 3fr;
-    border-top: 1px solid rgba(128, 128, 128, 0.68);
-}
-
 main {
     grid-area: main;
     height: 5fr;
-}
-
-footer {
-    grid-area: footer;
-    width: 1fr;
 }
 
 section {
     height: 80vh;
 }
 
-nav li:not(:last-child) {
-    border-right: 1px solid rgba(128, 128, 128, 0.68);
-}
 
-footer li:not(:last-child) {
-    border-right: 1px solid rgba(128, 128, 128, 0.68);
-}
-
-li {
-    text-align: center;
-    padding-top: 20px;
-}
 
 .hero_text h4 {
     font-size: 1rem;
@@ -199,14 +115,4 @@ li {
     left: 0px;
     border-bottom-left-radius: 200px;
     border-bottom-right-radius: 25px;
-}
-
-@media(max-width:800px) {
-    ._hello {
-        flex-direction: column;
-    }
-
-    .hero_text h2 {
-        padding-bottom: 2rem;
-    }
 }
