@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.details-interests {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-me-headers {
+    float: left;
+    max-width: 500px;
+    margin: 5% 5% 5% 20%;
+}
+
+.about-me-headers h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(67, 217, 173, 1);
+}
+
+.about-me-headers span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(67, 217, 173, 1);
+}

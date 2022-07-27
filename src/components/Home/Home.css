@@ -3,10 +3,6 @@ main {
     height: 5fr;
 }
 
-
-
-
-
 .hero_text h4 {
     font-size: 1rem;
     color: white;
@@ -63,6 +59,7 @@ main {
     border-bottom-right-radius: 25px;
     background-color: transparent;
 }
+
 #light_hold{
     animation: colorsm 8s infinite linear;
     box-shadow: 100px 50px 150px 150px rgba(67, 217, 172, 0.567), -100px -50px 150px 150px rgba(77, 92, 206, 0.6);
