@@ -10,6 +10,8 @@ $color2: #D93A54;
 
 
 .sea {
+    position: relative;
+    top: -10%;
     margin: 40px auto 0 auto;
     overflow: hidden;
     
@@ -45,8 +47,8 @@ $color2: #D93A54;
     .circle-wrapper {
         position: relative;
         background: linear-gradient(darken($color1, 3%), darken($color1, 12%));
-        width:300px;
-        height:300px;
+        width:350px;
+        height:350px;
         margin: 10px auto 0 auto;
         overflow: hidden;
         z-index: 0;
@@ -79,7 +81,7 @@ $color2: #D93A54;
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: 0 40px 150px 40px;
+                border-width: 0 40px 250px 40px;
                 border-color: transparent transparent lighten($color1,5%) transparent;
                
                 transform: rotate(-50deg);
