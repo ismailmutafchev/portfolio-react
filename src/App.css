@@ -18,7 +18,6 @@
 }
 html{
     margin-bottom: 0px;
-
 }
 body {
     display: grid;
@@ -29,10 +28,8 @@ body {
 }
 
 section {
-    height: 83.5vh;
+    height: 84.5vh;
 }
-
-
 
 
 @media(max-width:800px) {
