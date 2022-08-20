@@ -1,22 +1,31 @@
 .projects{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: satrt;
     align-items: center;
 }
 
 .cards{
-    width: 85vw;
+    width: 85%;
+    height: 70%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 20px 20px ;
+}
+
+.project-heading{
+    color: rgba(233, 146, 135, 1);
+    font-size: 3rem;
+    margin:0px 30px 100px 30px;
 }
 
 
 .project-card{
     border: 1px solid rgba(96, 123, 150, 1);
-    border-radius: 20%;
-    width: 15%;
-    height: 150px;
+    border-radius: 5%;
+    height: 45%;
+    width: 30%;
 }
 
