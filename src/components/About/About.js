@@ -12,24 +12,23 @@ function About() {
                 </div>
                 <div className="about-me-details">
                     <div className="details-list">
-                        <div> 
+                        <div>
 
-                        <h1>Personal Details</h1>
-                        <ul className="details-types">
-                            <li><p className='details-type'>phone number:</p> <p>fdsfsdfsd</p></li>
-                            <li><p className='details-type'>email:</p> <p>fdsfsdfsd</p></li>
-                            <li><p className='details-type'>whatsapp:</p> <p>fdsfsdfsd</p></li>
-                        </ul>
+                            <h1>Personal Details</h1>
+                            <ul className="details-types">
+                                <li><p className='details-type'>phone number:</p> <p>07500******</p></li>
+                                <li><p className='details-type'>email:</p> <p>is*********@gmail.com</p></li>
+                                <li><p className='details-type'>whatsapp:</p> <p>07500******</p></li>
+                            </ul>
                         </div>
                     </div>
                     <div className="about-me-intrests">
                         <h1>My interests</h1>
                         <ul className="details-types">
-                            <li><i class="fa-solid fa-futbol"></i></li>
-                            <li><i class="fa-solid fa-photo-film-music"></i></li>
-                            <li><i class="fa-solid fa-code"></i></li>
-                            <li><i class="fa-solid fa-popcorn"></i></li>
-                            <li><i class="fa-solid fa-gamepad-modern"></i></li>
+                            <li><i class="fa-solid fa-futbol"></i> Football </li>
+                            <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                            <li><i class="fa-solid fa-code"></i> Coding </li>
+                            <li><i class="fa-solid fa-film"></i> Movies </li>
                         </ul>
                     </div>
                 </div>
