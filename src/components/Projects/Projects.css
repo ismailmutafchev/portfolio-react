@@ -1,31 +1,60 @@
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: satrt;
     align-items: center;
 }
 
-.cards{
+.cards {
     width: 85%;
     height: 70%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px 20px ;
+    gap: 20px 20px;
 }
 
-.project-heading{
+.project-heading {
     color: rgba(233, 146, 135, 1);
     font-size: 3rem;
-    margin:0px 30px 100px 30px;
+    margin: 0px 30px 100px 30px;
 }
 
 
-.project-card{
+.project-card {
     border: 1px solid rgba(96, 123, 150, 1);
     border-radius: 5%;
     height: 45%;
     width: 30%;
 }
 
+.inner-project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://image.shutterstock.com/image-vector/man-his-desk-works-on-260nw-1936064362.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+/* .inner-project-card:hover {
+    filter: blur(1px);
+} */
+.project-card-heading{
+    color: black;
+    font-size: 3rem;
+    text-shadow: 1px 1px ;
+}
+
+.button {
+    border: 1px solid rgba(96, 123, 150, 1);
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

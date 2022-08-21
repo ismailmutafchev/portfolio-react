@@ -1,11 +1,13 @@
 export const ProjectCard = () => {
     return (
         <div className="project-card">
-            <img className="project-card-img"></img>
-            <div>
+            <img className="project-card-img" alt="project-img"></img>
+            <div className="inner-project-card">
                 <h2 className="project-card-heading">Name</h2>
-                <button>View Code</button>
-                <button>View Website</button>
+                <div>
+                    <button className="button"><a href="https://github.com/ismailmutafchev" target="_blank" rel="noreferrer">View Code</a></button> 
+                    <button className="button"><a href="https://github.com/ismailmutafchev" target="_blank" rel="noreferrer">View Website</a></button> 
+                </div>
             </div>
         </div>
     )
