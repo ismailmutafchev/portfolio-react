@@ -1,7 +1,6 @@
 .projects {
     display: flex;
     flex-direction: column;
-    justify-content: satrt;
     align-items: center;
 }
 
@@ -27,6 +26,17 @@
     border-radius: 5%;
     height: 45%;
     width: 30%;
+    background-size: 100% 100%;
+}
+
+.innter-project-card::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.149);
 }
 
 .inner-project-card {
@@ -34,27 +44,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://image.shutterstock.com/image-vector/man-his-desk-works-on-260nw-1936064362.jpg');
-    width: 100%;
     height: 100%;
+    border-radius: 5%;
 }
 
-/* .inner-project-card:hover {
-    filter: blur(1px);
-} */
-.project-card-heading{
-    color: black;
+.inner-project-card:hover{
+    backdrop-filter: blur(5px);
+}
+
+.project-card-heading {
+    color: rgb(13, 10, 10);
     font-size: 3rem;
-    text-shadow: 1px 1px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.inner-project-card>div {
+    display: flex;
+}
+
+.button a{
+    font-size: 1.5rem;
 }
 
 .button {
     border: 1px solid rgba(96, 123, 150, 1);
+    backdrop-filter: blur(5px);
     margin: 30px;
-    width: 200px;
+    width: 8vw;
     height: 50px;
     text-align: center;
-    font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+    z-index: -0;
+}
+
+.button:hover {
+    border: 1.2px solid rgba(96, 123, 150, 1);
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(188, 84, 5, 0.361);
 }

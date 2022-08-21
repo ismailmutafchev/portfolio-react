@@ -15,7 +15,7 @@ export function Hero() {
             </div>
             <div class="hero-game">
                 <div class="game_window">
-                    <img src="./IMG_1496.PNG" alt="" />
+                    <img src="./images/IMG_1496.PNG" alt="" />
                     <div class="screw" id="screw-tr">x</div>
                     <div class="screw" id="screw-tl">x</div>
                     <div class="screw" id="screw-br">x</div>
