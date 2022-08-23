@@ -32,5 +32,9 @@
         width: 20%;
         text-align: center;
         height: 10%;
+        cursor: pointer;
+    }
+    .form-submit:hover{
+        transform: scale(1.05);
     }
 }

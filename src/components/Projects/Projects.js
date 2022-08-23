@@ -1,6 +1,6 @@
 import { ProjectCard } from "./ProjectCard"
 import { ProjectData } from "./ProjectsData"
-import './Projects.css'
+import './Projects.scss'
 
 function Projects() {
     return (

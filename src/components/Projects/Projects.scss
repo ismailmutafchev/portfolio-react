@@ -23,20 +23,9 @@
 
 .project-card {
     border: 1px solid rgba(96, 123, 150, 1);
-    border-radius: 5%;
     height: 45%;
     width: 30%;
     background-size: 100% 100%;
-}
-
-.innter-project-card::before{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.149);
 }
 
 .inner-project-card {
@@ -46,10 +35,36 @@
     align-items: center;
     height: 100%;
     border-radius: 5%;
+    a{
+        display: none;
+        font-size: 2rem;
+        text-shadow: 0px 0px 10px rgb(215, 69, 29);
+        color: rgba(67, 217, 173, 1);
+    }
+    .button {
+        display: none;
+        border: 1px solid rgb(51, 62, 74);
+        backdrop-filter: blur(10px);
+        margin: 30px;
+        width: 8vw;
+        height: 50px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: -0;
+    }
 }
-
 .inner-project-card:hover{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    .button{
+        display: block;
+    }
+    .button a{
+        display: block;
+    }
+    h2{
+        display: none;
+    }
 }
 
 .project-card-heading {
@@ -63,25 +78,8 @@
     display: flex;
 }
 
-.button a{
-    font-size: 1.5rem;
-    text-shadow: 0px 0px 10px rgb(215, 69, 29);
-}
-
-.button {
-    border: 1px solid rgba(96, 123, 150, 1);
-    backdrop-filter: blur(10px);
-    margin: 30px;
-    width: 8vw;
-    height: 50px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: -0;
-}
-
 .button:hover {
-    border: 1.2px solid rgba(96, 123, 150, 1);
+    border: 2px solid rgba(51, 62, 74);
     font-weight: 600;
     box-shadow: 0px 0px 10px rgba(188, 84, 5, 0.361);
 }
