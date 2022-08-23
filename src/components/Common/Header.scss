@@ -1,0 +1,66 @@
+a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgb(96 122 151);
+    padding: 10px 0px;
+}
+
+nav {
+    height: 10vh;
+
+    a:hover {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: rgba(233, 146, 135, 1);
+    }
+
+    ul {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.68);
+        grid-area: header;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 6fr 1fr;
+    }
+
+    li:not(:last-child) {
+        border-right: 1px solid rgba(128, 128, 128, 0.68);
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    padding-top: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.selected {
+    border-right: 1px solid rgba(67, 217, 173, 1);
+    border-left: 1px solid rgba(67, 217, 173, 1);
+    box-shadow: inset 0px 0px 20px rgba(0, 255, 179, 0.235);
+    color: rgba(67, 217, 173, 1);
+
+    a {
+        color: rgba(67, 217, 173, 1);
+    }
+    a:hover {
+        color: rgba(67, 217, 173, 1);
+    }
+}
+
+#nav_name {
+    min-width: 120px;
+}
+
+#nav_hello,
+#nav_about-me,
+#nav_projects,
+#nav_contact {
+    min-width: 90px;
+}

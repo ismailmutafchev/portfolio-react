@@ -1,7 +1,9 @@
-import './About.css'
+import './About.scss'
 import './Submarine.scss'
 
-function About() {
+function About({setPage}) {
+
+    setPage('about')
     return (
         <section className="about">
 

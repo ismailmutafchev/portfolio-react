@@ -1,6 +1,7 @@
 import './Contact.scss'
 
-function Contact() {
+function Contact({setPage}) {
+    setPage('contact')
     return (
         <section className="contact-section">
             <div className="contact-form">

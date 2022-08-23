@@ -1,4 +1,4 @@
-import './Links.css'
+import './Links.scss'
 
 export function Footer() {
     return (<footer>

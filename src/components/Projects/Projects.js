@@ -2,7 +2,8 @@ import { ProjectCard } from "./ProjectCard"
 import { ProjectData } from "./ProjectsData"
 import './Projects.scss'
 
-function Projects() {
+function Projects({setPage}) {
+    setPage('projects')
     return (
         <section className="projects">
             <h1 className="project-heading">Projects</h1>

@@ -37,14 +37,13 @@
     border-radius: 5%;
     a{
         display: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-shadow: 0px 0px 10px rgb(215, 69, 29);
         color: rgba(67, 217, 173, 1);
     }
     .button {
         display: none;
-        border: 1px solid rgb(51, 62, 74);
-        backdrop-filter: blur(10px);
+        background-color: rgba(52, 26, 22, 0.463);
         margin: 30px;
         width: 8vw;
         height: 50px;
@@ -57,13 +56,13 @@
 .inner-project-card:hover{
     backdrop-filter: blur(4px);
     .button{
-        display: block;
+        display: inline;
     }
     .button a{
-        display: block;
+        display: inline;
     }
     h2{
-        display: none;
+        display: inline;
     }
 }
 
@@ -79,7 +78,8 @@
 }
 
 .button:hover {
-    border: 2px solid rgba(51, 62, 74);
+    transform: scale(1.1);
+    border: 1px solid rgba(67, 217, 173, 1);
     font-weight: 600;
     box-shadow: 0px 0px 10px rgba(188, 84, 5, 0.361);
 }

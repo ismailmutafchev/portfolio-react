@@ -1,0 +1,64 @@
+footer {
+    grid-area: footer;
+}
+
+footer {
+    ul {
+        height: 5em;
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 10fr 3fr;
+        border-top: 1px solid rgba(128, 128, 128, 0.68);
+    }
+
+    .link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: rgb(96 122 151);
+    }
+
+    li:not(:last-child) {
+        border-right: 1px solid rgba(128, 128, 128, 0.68);
+    }
+
+    li:hover {
+        cursor: pointer;
+        border-right: 1px solid rgba(67, 217, 173, 1);
+        border-left: 1px solid rgba(67, 217, 173, 1);
+        box-shadow: inset 0px 0px 20px rgba(0, 255, 179, 0.235);
+        
+    }
+
+    #blank_bottom:hover {
+        border-right: 1px solid salmon;
+        border-left: 1px solid salmon;
+        box-shadow: inset 0px 0px 20px rgba(250, 128, 114, 0.252);
+    }
+
+    #twitter:hover {
+        border-right: 1px solid rgb(29, 155, 240);
+        border-left: 1px solid rgb(29, 155, 240);
+        box-shadow: inset 0px 0px 20px rgb(29, 155, 240);
+        a{
+            color: rgb(29, 155, 240);
+        }
+    }
+
+    #facebook:hover {
+        border-right: 1px solid #094594;
+        border-left: 1px solid #0951af;
+        box-shadow: inset 0px 0px 20px #0850ad;
+        a{
+            color: white;
+        }
+    }
+
+    #github:hover {
+        border-left: 1px solid rgb(252, 252, 252);
+        border-right: 0px solid rgb(252, 252, 252);
+        box-shadow: inset 0px 0px 20px black;
+        a{
+            color: white;
+        }
+    }
+
+}

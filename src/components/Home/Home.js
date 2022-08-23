@@ -1,6 +1,7 @@
 import './Home.css'
 
-export function Hero() {
+export function Hero({setPage}) {
+    setPage('home')
     return (
         <section class="_hello">
             <div class="hero_text">
